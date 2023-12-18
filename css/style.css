@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    background: azure;
+    min-height: 100vh;
+}
+.wrapper {
+    height: 260px;
+    max-width: 420px;
+    background: #000016;
+    border-radius: 8px;
+    padding: 16px 25px 0;
+    border: 1px solid crimson;
+    transition: height 0.5s ease;
+}
+header {
+    text-align: center;
+    padding: 10px;
+    background: cornsilk;
+    border-radius: 8px;
+}
+header h1 {
+    color: goldenrod;
+}
+header p {
+    color: crimson;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.form input {
+    border: 1.5px solid yellow;
+    transition: box-shadow 0.05s ease;
+    background: transparent;
+    color: gold;
+    padding: 5px;
+    text-shadow: 0 0 5px yellow;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.shadowing {
+    box-shadow: 0 0 8px 4px yellow,
+    0 0 8px 4px azure;
+}
+.form button {
+    padding: 5px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1.5px solid yellow;
+    color: gold;
+    text-align: center;
+    font-size: 16px;
+}
+.wrapper {
+    height: 260px;
+    max-width: 420px;
+    background: #000016;
+    border-radius: 8px;
+    padding: 16px 25px 0;
+    border: 1px solid crimson;
+    transition: height 0.5s ease;
+}
+.wrapper.active {
+    height: 450px;
+}
+.wrapper .qr-code {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    padding: 13px 0;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.wrapper.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s ease;
+}
+.qr-code img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    padding: 5px;
+}
+.qr-code button {
+    padding: 5px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1.5px solid yellow;
+    color: gold;
+    text-align: center;
+    font-size: 16px;
+}
